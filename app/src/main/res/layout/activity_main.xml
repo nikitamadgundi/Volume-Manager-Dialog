@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/manage_volume"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Volume"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/media_message"
+        app:layout_constraintTop_toBottomOf="@+id/manage_volume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust media volume:"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/txtMedia"
+        app:layout_constraintTop_toBottomOf="@+id/media_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/alarm_message"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust alarm volume:"
+        android:textSize="18sp"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/txtAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/notification_message"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlarm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust notification volume:"
+        android:textSize="18sp"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/txtNotification"
+        app:layout_constraintTop_toBottomOf="@+id/notification_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/ringtone_message"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotification"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust ringtone volume:"
+        android:textSize="18sp"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/txtRingtone"
+        app:layout_constraintTop_toBottomOf="@+id/ringtone_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="15"
+        android:progress="0"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtRingtone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
